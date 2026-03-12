@@ -1,25 +1,18 @@
 SSH Connections TUI
+Aplikacja terminalowa napisana w Go, umożliwiająca wygodne zarządzanie hostami SSH z poziomu interfejsu tekstowego (TUI). Pozwala szybko organizować serwery, przeglądać ich szczegóły oraz łączyć się jednym klawiszem.
 
-Terminalowa aplikacja napisana w Go, umożliwiająca zarządzanie i łączenie się z hostami SSH z poziomu wygodnego interfejsu tekstowego (TUI).
+✨ Funkcje
+grupowanie hostów w sekcje
 
-Program pozwala:
+podgląd szczegółów hosta
 
-organizować hosty w grupy
+szybkie uruchamianie połączeń SSH
 
-przeglądać szczegóły hosta
+wykonywanie ping bez opuszczania aplikacji
 
-uruchamiać SSH jednym klawiszem
+interfejs oparty na bibliotekach tview i tcell
 
-wykonywać ping do hosta
-
-Interfejs jest zbudowany przy użyciu bibliotek:
-
-tview
-
-tcell
-
-Wymagania
-
+🧩 Wymagania
 Przed uruchomieniem upewnij się, że masz zainstalowane:
 
 Go 1.20+
@@ -28,40 +21,46 @@ ssh
 
 ping
 
-Sprawdzenie:
+Sprawdzenie wersji:
 
 go version
 ssh -V
 ping -V
-Instalacja
 
+📦 Instalacja
 Sklonuj repozytorium:
 
-git clone https://github.com/twoj-user/ssh-connections-tui.git
-cd ssh-connections-tui
+git clone https://github.com/twoj-user/sshcm.git
+cd sshcm
 
 Pobierz zależności:
 
 go mod tidy
 
+Uruchomienie bez budowania:
+
+go run main.go
+
 Zbuduj program:
 
-go build -o ssh-tui
-Uruchomienie
+go build -o sshcm
 
+🚀 Uruchomienie
 Program wymaga pliku konfiguracyjnego:
 
 ssh_connections.conf
+mv ssh_connections.conf.example ssh_connections.conf
 
-Uruchomienie:
+Uruchomienie aplikacji:
 
-./ssh-tui
-Konfiguracja
+./sshcm
 
-Program korzysta z pliku:
+⚙️ Konfiguracja
+Aplikacja korzysta z pliku:
 
 ssh_connections.conf
-Przykład konfiguracji
+
+Przykładowa konfiguracja
 group Production Servers
 
 host web1
@@ -76,17 +75,17 @@ user admin
 port 22
 description Serwer bazy danych
 
-
 group Development
 
 host dev1
 hostname 192.168.1.30
 user dev
 description Serwer developerski
-Sterowanie
-Klawisz	Akcja
-↑ / ↓	nawigacja
-→	rozwiń grupę
-←	zwiń grupę
-Enter	połącz przez SSH
-p	ping hosta
+
+🎮 Sterowanie
+Klawisz / Akcja
+↑ / ↓ – nawigacja
+→ – rozwiń grupę
+← – zwiń grupę
+Enter – połącz przez SSH
+p – ping hosta
