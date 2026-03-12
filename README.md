@@ -19,47 +19,61 @@ Upewnij się, że w Twoim systemie znajdują się:
 
 Sprawdzenie wersji:
 
+```
    go version
    ssh -V
    ping -V
+```
 
 ## 📦 Instalacja
 
 1. Zainstaluj golang:
-   
+
+```
    sudo apt update
    
    sudo apt install golang-go
+```
 
 2. Pobrac repozytorium
-   
+
+```
    git clone adresrepo
    
    cd sshcm
+```
    
 3. Pobierz zależności:
-   
+
+```   
    go mod tidy
+```
    
 4. Zbuduj program:
-   
+
+```
    go build -o sshcm
+```
 
 5. Uruchomienie bez budowania:
 
+```
    go run main.go
-   
+```
    
 ## 🚀 Uruchomienie
 
 1. Przygotuj plik konfiguracyjny:
-   
+
+```
    cp ssh_connections.conf.example ssh_connections.conf
-   
+```
+
 2. Uruchom aplikację:
-   
+
+```
    ./sshcm
-   
+```
    
 ## ⚙️ Konfiguracja
 Aplikacja korzysta z pliku ssh_connections.conf. Przykładowa struktura:
@@ -91,12 +105,12 @@ host dev1
 
 | Klawisz | Akcja |
 |---|---|
-| ↑ / ↓ | Nawigacja po liście |
-| → | Rozwinięcie grupy |
-| ← | Zwinięcie grupy |
-| Enter | Połącz przez SSH |
-| p | Wykonaj Ping na hoście |
-| q / Ctrl+C | Wyjście z aplikacji |
+| ↑ / ↓ |       Nawigacja po liście |
+| → |           Rozwinięcie grupy |
+| ← |           Zwinięcie grupy |
+| Enter |       Połącz przez SSH |
+| p |           Wykonaj Ping na hoście |
+| q / Ctrl+C |  Wyjście z aplikacji |
 
 ------------------------------
 
