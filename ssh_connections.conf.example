@@ -1,0 +1,21 @@
+group Production Servers
+
+host web1
+hostname 192.168.1.10
+user root
+port 22
+description Główny serwer WWW
+
+host db1
+hostname 192.168.1.20
+user admin
+port 22
+description Serwer bazy danych
+
+
+group Development
+
+host dev1
+hostname 192.168.1.30
+user dev
+description Serwer developerski
