@@ -45,9 +45,7 @@ Sprawdzenie wersji:
    
 3. Pobierz zależności:
 
-```   
-   go mod init sshcm
-   
+```  
    go mod tidy
 ```
 
