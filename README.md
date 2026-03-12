@@ -18,12 +18,12 @@ Upewnij się, że w Twoim systemie znajdują się:
 * **ping**
 
 Sprawdzenie wersji:
-```bash
+
 go version
 ssh -V
 ping -V
 
-📦 Instalacja
+## 📦 Instalacja
 
    1. Sklonuj repozytorium:
 
@@ -49,7 +49,7 @@ ping -V
    go run main.go
    
    
-🚀 Uruchomienie
+## 🚀 Uruchomienie
 
    1. Przygotuj plik konfiguracyjny:
    
@@ -60,7 +60,7 @@ ping -V
    ./sshcm
    
    
-⚙️ Konfiguracja
+## ⚙️ Konfiguracja
 Aplikacja korzysta z pliku ssh_connections.conf. Przykładowa struktura:
 
 group Production Servers
@@ -84,7 +84,7 @@ host dev1
     user dev
     description Serwer developerski
 
-🎮 Sterowanie
+## 🎮 Sterowanie
 
 | Klawisz | Akcja |
 |---|---|
@@ -96,6 +96,4 @@ host dev1
 | q / Ctrl+C | Wyjście z aplikacji |
 
 ------------------------------
-
-
 
