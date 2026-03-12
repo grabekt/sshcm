@@ -25,26 +25,27 @@ ping -V
 
 ## 📦 Instalacja
 
-   1. Sklonuj repozytorium:
-
-   Zainstaluj golang
+   1. Zainstaluj golang:
    
    sudo apt update
    
    sudo apt install golang-go
 
-   Pobrac repozytorium
+   2. Pobrac repozytorium
+   
+   git clone adresrepo
+   
    cd sshcm
    
-   2. Pobierz zależności:
+   4. Pobierz zależności:
    
    go mod tidy
    
-   3. Zbuduj program:
+   5. Zbuduj program:
    
    go build -o sshcm
 
-   4. Uruchomienie bez budowania:
+   6. Uruchomienie bez budowania:
 
    go run main.go
    
