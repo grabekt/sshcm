@@ -13,50 +13,50 @@ Aplikacja terminalowa napisana w **Go**, umożliwiająca wygodne zarządzanie ho
 ## 🧩 Wymagania
 
 Upewnij się, że w Twoim systemie znajdują się:
-* **Go 1.20+**
-* **ssh**
-* **ping**
+   * **Go 1.20+**
+   * **ssh**
+   * **ping**
 
 Sprawdzenie wersji:
 
-go version
-ssh -V
-ping -V
+   go version
+   ssh -V
+   ping -V
 
 ## 📦 Instalacja
 
-   1. Zainstaluj golang:
+1. Zainstaluj golang:
    
    sudo apt update
    
    sudo apt install golang-go
 
-   2. Pobrac repozytorium
+2. Pobrac repozytorium
    
    git clone adresrepo
    
    cd sshcm
    
-   4. Pobierz zależności:
+3. Pobierz zależności:
    
    go mod tidy
    
-   5. Zbuduj program:
+4. Zbuduj program:
    
    go build -o sshcm
 
-   6. Uruchomienie bez budowania:
+5. Uruchomienie bez budowania:
 
    go run main.go
    
    
 ## 🚀 Uruchomienie
 
-   1. Przygotuj plik konfiguracyjny:
+1. Przygotuj plik konfiguracyjny:
    
    cp ssh_connections.conf.example ssh_connections.conf
    
-   2. Uruchom aplikację:
+2. Uruchom aplikację:
    
    ./sshcm
    
