@@ -66,7 +66,7 @@ Sprawdzenie wersji:
 1. Przygotuj plik konfiguracyjny:
 
 ```
-   cp ssh_connections.conf.example ssh_connections.conf
+   mv ssh_connections.conf.example ssh_connections.conf
 ```
 
 2. Uruchom aplikację:
