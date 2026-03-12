@@ -64,6 +64,7 @@ Sprawdzenie wersji:
 ## ⚙️ Konfiguracja
 Aplikacja korzysta z pliku ssh_connections.conf. Przykładowa struktura:
 
+'''
 group Production Servers
 
 host web1
@@ -84,6 +85,7 @@ host dev1
     hostname 192.168.1.30
     user dev
     description Serwer developerski
+'''
 
 ## 🎮 Sterowanie
 
