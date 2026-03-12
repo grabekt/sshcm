@@ -46,19 +46,21 @@ Sprawdzenie wersji:
 3. Pobierz zależności:
 
 ```   
+   go mod init sshcm
+   
    go mod tidy
 ```
-   
-4. Zbuduj program:
 
-```
-   go build -o sshcm
-```
-
-5. Uruchomienie bez budowania:
+4. Uruchomienie bez budowania:
 
 ```
    go run main.go
+```
+
+5. Zbuduj program:
+
+```
+   go build -o sshcm
 ```
    
 ## 🚀 Uruchomienie
