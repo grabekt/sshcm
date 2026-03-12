@@ -38,7 +38,7 @@ Sprawdzenie wersji:
 2. Pobrac repozytorium
 
 ```
-   git clone adresrepo
+   git clone https://github.com/grabekt/sshcm.git
    
    cd sshcm
 ```
